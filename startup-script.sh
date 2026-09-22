@@ -8,8 +8,14 @@ else
 	echo "Homebrew is installed. Skipping..."
 fi
 
+sudo apt-get update
+sudo apt-get install -y build-essential
+
 # Install development packages
 packages=(
+	derailed/k9s/k9s
+	git-lfs
+        go
 	neovim
 	zellij
 	zsh
